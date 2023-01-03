@@ -6,7 +6,7 @@ const url = 'https://picsum.photos/v2/list?limit='
 
 button.addEventListener('click', () => {
     let num = input.value
-    if(num>=1 && num<=10) {
+    if(num >= 1 && num <= 10) {
         xhrRequest(`${url}` + num)
     } else {
         text.textContent = 'Число вне диапазона от 1 до 10'
